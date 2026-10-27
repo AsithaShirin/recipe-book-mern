@@ -158,3 +158,4 @@ The React frontend will be accessible at: `http://localhost:5173`
 - [x] **Edit Recipe**: Click the edit button, modify fields, and save; updates render instantaneously.
 - [x] **Delete Recipe**: Click the delete icon; verify the confirmation prompt, and observe deletion.
 - [x] **Mobile Responsiveness**: Test on mobile viewports (e.g. 375px) and desktop screens.
+
