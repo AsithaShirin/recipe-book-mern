@@ -1,0 +1,13 @@
+{
+  "name": "recipe-book-mern",
+  "version": "1.0.0",
+  "description": "Full Stack MERN Recipe Book Web Application",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "keywords": ["mern", "recipe-book", "react", "nodejs", "express", "mongodb"],
+  "author": "",
+  "license": "MIT"
+}
