@@ -1,4 +1,5 @@
-const API_BASE = '/api/recipes';
+const API_HOST = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE = `${API_HOST}/api/recipes`;
 
 export const api = {
   // Get all recipes with optional category and search filter
@@ -76,7 +77,7 @@ export const api = {
 
   // Quick Seed database for demo
   seed: async () => {
-    const res = await fetch('/api/seed', { method: 'POST' });
+    const res = await fetch(`${API_HOST}/api/seed`, { method: 'POST' });
     const data = await res.json();
     if (!res.ok) {
       throw new Error(data.message || 'Failed to seed sample recipes');
